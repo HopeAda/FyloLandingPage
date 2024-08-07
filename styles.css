@@ -22,8 +22,22 @@ html{
 body{
     font-size: 1.6rem;
 }
+h1,
+h2,
+h3{
+    color: var(--VeryDarkBlue);
+    margin: 1rem 1rem 0 1rem;
+}
 
-
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 2.2rem;
+}
+h3{
+    font-size: 1.8rem;
+}
 .nav{
     display: inline-flex;
     flex-direction: row;
@@ -31,6 +45,7 @@ body{
     padding: 2rem 2rem 2rem 1rem;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 3rem;
 }
 .parts{
     display: flex;
@@ -45,3 +60,61 @@ body{
     font-size: 1.2rem;
    
 }
+
+.illustration{
+    width: 85%;
+}
+
+.intro_part{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    color: var(--VeryDarkBlue);
+    padding: 0 2rem;
+}
+.intro_part .illustration{
+    margin-bottom: 2.5rem;
+}
+.intro_part p{
+    padding: 1rem 0;
+}
+
+input, .btn{
+    padding: 1rem 2rem;
+    width: 90%;
+    margin: .8rem;
+    border-radius: 5px;
+}
+::placeholder{
+    color: gray;
+}
+input{
+    border: 1px solid var(--VeryDarkBlue);
+}
+input:focus{
+    border-color: var(--DesaturatedBlue);
+}
+.btn{
+    background-color: var(--BrightBlue);
+    border: none;
+    color: white;
+}
+
+
+
+
+.main_part{
+    background-image: url(images/bg-curve-mobile.svg);
+}
+
+.sign_up{
+    background-color: var(--DesaturatedBlue);
+}
+
+.footer{
+    background-color: var(--VeryDarkBlue);
+}
+
