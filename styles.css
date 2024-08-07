@@ -9,3 +9,39 @@
 --LightGrayishBlue: hsl(240, 75%, 98%);
 --LightGray: hsl(0, 0%, 75%);
 }
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+
+.nav{
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 2rem 2rem 2rem 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.parts{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    height: 20px;
+}
+.nav_items{
+    margin-left: 2rem;
+    font-size: 1.2rem;
+   
+}
