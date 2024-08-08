@@ -31,7 +31,7 @@ h1,
 h2,
 h3{
     color: var(--VeryDarkBlue);
-    margin: 1rem 1rem 0 1rem;
+    margin: 1rem 1rem 0 0;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -40,6 +40,7 @@ h1{
 }
 h2{
     font-size: 1.8rem;
+    text-align: center;
 }
 h3{
     font-size: 1.3rem;
@@ -92,7 +93,7 @@ input, .btn{
     padding: 1rem 2rem;
     width: 90%;
     margin: .8rem;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 ::placeholder{
     color: gray;
@@ -201,17 +202,58 @@ input:focus{
 }
 .person p{
     font-size: 1rem;
-    margin-top: .3rem;
 }
+
 
 
 .sign_up{
     background: var(--DesaturatedBlue);
     width: 100%;
-    padding: 3rem 1rem;
+    padding: 5rem 2rem 7rem 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
+.sign_up h2, .sign_up p{
+    color: white;
+    padding: 0 2rem;
+}
+.sign_up input, .sign_up .btn{
+    width: 75%;
+    margin: .5rem;
+}
+
 
 .footer{
     background-color: var(--VeryDarkBlue);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 7rem 5rem 5rem 5rem;
+}
+i{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    margin: .5rem;
+    text-align: center;
+    vertical-align: middle;
+}
+i:nth-of-type(1){
+    padding: 10px 13px;
+}
+
+
+.one, .two{
+    margin: 4rem 0 0 0;
+}
+.socials{
+    margin-top: 2rem;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
