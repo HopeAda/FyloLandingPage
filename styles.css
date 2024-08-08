@@ -21,6 +21,7 @@ html{
 
 body{
     font-size: 1.6rem;
+    margin: 0;
 }
 h1,
 h2,
@@ -33,7 +34,7 @@ h1{
     font-size: 2.5rem;
 }
 h2{
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 h3{
     font-size: 1.8rem;
@@ -42,7 +43,7 @@ h3{
     display: inline-flex;
     flex-direction: row;
     width: 100%;
-    padding: 2rem 2rem 2rem 1rem;
+    padding: 2rem;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 3rem;
@@ -63,6 +64,7 @@ h3{
 
 .illustration{
     width: 85%;
+    margin-bottom: 3rem;
 }
 
 .intro_part{
@@ -74,9 +76,6 @@ h3{
     margin-top: 5rem;
     color: var(--VeryDarkBlue);
     padding: 0 2rem;
-}
-.intro_part .illustration{
-    margin-bottom: 2.5rem;
 }
 .intro_part p{
     padding: 1rem 0;
@@ -105,10 +104,57 @@ input:focus{
 
 
 
+.img{
+    height: 50px;
+    background: url(images/bg-curve-mobile.svg) no-repeat;
+    position: relative;
+    top: 70px;
 
-.main_part{
-    background-image: url(images/bg-curve-mobile.svg);
 }
+.main_part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    background-color: #f9f8fe;
+}
+.main_part .illustration{
+    margin-top: 5rem;
+}
+.main_part .text_part{
+    padding: 0 2.5rem;
+    margin-top: 2rem;
+}
+.text_part p{
+    margin-top: 2rem;
+}
+
+
+.underline{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.see{
+    padding-bottom: 5px;
+    border-bottom: 1.5px solid var(--ModerateCyan);
+    color: var(--ModerateCyan);
+    font-size: 1.5rem;
+}
+.see:hover::after{
+    margin-left: 8px
+}
+.see::after{
+    content: url(images/icon-arrow.svg);
+    margin-left: 5px;
+    position: relative;
+    top: 3px;
+    transition: margin .15s;
+    }
+
 
 .sign_up{
     background-color: var(--DesaturatedBlue);
