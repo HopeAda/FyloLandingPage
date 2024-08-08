@@ -8,6 +8,7 @@
 --ModerateCyan: hsl(170, 45%, 43%);
 --LightGrayishBlue: hsl(240, 75%, 98%);
 --LightGray: hsl(0, 0%, 75%);
+--shadow:0 0 10px 1px var(--LightGray);
 }
 
 *{
@@ -20,24 +21,29 @@ html{
 }
 
 body{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin: 0;
+    font-family: "Raleway", sans-serif;
+    line-height: 1.5;
+    color: var(--DesaturatedBlue);
 }
 h1,
 h2,
 h3{
     color: var(--VeryDarkBlue);
     margin: 1rem 1rem 0 1rem;
+    font-family: "Open Sans", sans-serif;
 }
 
 h1{
     font-size: 2.5rem;
 }
 h2{
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 h3{
-    font-size: 1.8rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
 }
 .nav{
     display: inline-flex;
@@ -47,6 +53,7 @@ h3{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 3rem;
+    font-weight: 600;
 }
 .parts{
     display: flex;
@@ -116,7 +123,8 @@ input:focus{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 7rem;
+    margin: 7rem 0 0 0;
+    padding: 0 0 3rem .5rem;
     background-color: #f9f8fe;
 }
 .main_part .illustration{
@@ -156,8 +164,51 @@ input:focus{
     }
 
 
+.testimonial{
+    padding: 3rem 1.5rem 2rem 3rem;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    width: 80%;
+    line-height: 1.5;
+    color: var(--VeryDarkBlue);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 3rem 0;
+}
+.quote{
+    height: 15px;
+    margin-bottom: 1rem;
+}
+.info_part img{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.info_part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.person{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem 1rem 1rem;
+}
+.person p, .person h3{
+    padding: 0;
+    margin: 0;
+}
+.person p{
+    font-size: 1rem;
+    margin-top: .3rem;
+}
+
+
 .sign_up{
-    background-color: var(--DesaturatedBlue);
+    background: var(--DesaturatedBlue);
+    width: 100%;
+    padding: 3rem 1rem;
 }
 
 .footer{
